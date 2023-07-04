@@ -1,0 +1,67 @@
+* {
+    color: aliceblue;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+#calender {
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 800px;
+    height: 800px;
+    background-color: black;
+    margin: 0px auto;
+}
+
+#months {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: goldenrod;
+    padding: 40px 0px;
+    text-transform: uppercase;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#weeksdays {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px 100px;
+    grid-column-gap: 7px;
+    text-align: center;
+    border: 1px solid black;
+    height: 20px;
+    padding: 30px 0px;
+    border-radius: 15px;
+    text-transform: uppercase;
+}
+
+#days {
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   padding: 4px;
+}
+
+#days div {
+    font-size: 20px;
+    margin: 3px;
+    width: 100px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+#days div:hover:not(.empty){
+    border: 2px solid gray;
+    cursor: pointer;
+}
+
+#today {
+    background-color: goldenrod;
+}
+
+
